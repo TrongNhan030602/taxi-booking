@@ -2,10 +2,12 @@ import React from "react";
 import Header from "./components/Header";
 import SliderSection from "./components/SliderSection";
 import ServiceSection from "./components/ServiceSection";
+import AdvantagesSection from "./components/AdvantagesSection";
 import LocationSection from "./components/LocationSection";
-import ReviewSection from "./components/CustomerReview";
-import BookingButton from "./components/BookingButton";
+import PromotionSection from "./components/PromotionSection";
+import CustomerFeedbackSection from "./components/CustomerFeedbackSection";
 import Footer from "./components/Footer";
+import PhoneCallButton from "./components/PhoneCallButton";
 import "./App.css";
 const phoneNumber = "0913519096";
 
@@ -15,10 +17,12 @@ const TaxiBooking = () => {
       <Header />
       <SliderSection phoneNumber={phoneNumber} />
       <ServiceSection phoneNumber={phoneNumber} />
-      <BookingButton phoneNumber={phoneNumber} />
+      <AdvantagesSection phoneNumber={phoneNumber} />
       <LocationSection phoneNumber={phoneNumber} />
-      <ReviewSection />
+      <PromotionSection phoneNumber={phoneNumber} />
+      <CustomerFeedbackSection />
       <Footer />
+      <PhoneCallButton phoneNumber={phoneNumber} />
     </div>
   );
 };

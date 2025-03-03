@@ -5,14 +5,16 @@
   border: 2px solid;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 /* Hình dạng nút */
 .rectangle {
-  border-radius: 4px;
+  border-radius: 1px;
 }
 .rounded-rectangle {
-  border-radius: 20px;
+  border-radius: 60px;
 }
 
 /* Nút có outline */

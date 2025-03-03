@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/css/CustomButton.css"; // Import CSS
+import "../assets/css/CustomButton.css";
 
 const CustomButton = ({
   text,

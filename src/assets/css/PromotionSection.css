@@ -1,0 +1,75 @@
+.promotion-section {
+  background: url("../img/taxilongxuyen726.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 400px; /* Giữ chiều cao tối thiểu */
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.promotion-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.promotion-section .content {
+  max-width: 720px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.promotion-section h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: var(--text-white);
+  filter: brightness(95%);
+}
+
+.promotion-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: var(--text-white);
+  filter: brightness(95%);
+}
+
+.promotion-button {
+  z-index: 5;
+  position: relative;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .promotion-section {
+    padding: 40px 15px;
+    min-height: 300px;
+    margin-top: 100px;
+  }
+
+  .promotion-section .content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .promotion-section h2 {
+    font-size: 20px;
+  }
+
+  .promotion-section p {
+    font-size: 14px;
+  }
+}

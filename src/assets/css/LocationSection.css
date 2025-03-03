@@ -1,0 +1,68 @@
+/* LocationSection.css */
+.location-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  height: 232px;
+  position: relative;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.location-section h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 19px;
+  color: #098b52;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/* Gạch ngang hai bên tiêu đề */
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #e6e6e6;
+  margin: 0 10px;
+  max-width: 444px;
+  margin-bottom: 20px;
+}
+
+.location-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .line {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    padding: 40px 15px;
+  }
+
+  .location-section h2 {
+    font-size: 17px;
+  }
+
+  .line {
+    max-width: 80px;
+  }
+
+  .location-buttons {
+    gap: 8px;
+  }
+}

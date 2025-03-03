@@ -1,0 +1,115 @@
+.customer-feedback-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff; /* Giữ nền trắng */
+  /* max-height: 342px; */
+  min-height: 342;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #098b52;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #e6e6e6;
+  margin: 0 10px;
+  max-width: 444px;
+  margin-bottom: 6px;
+}
+
+/* ⭐ Khu vực đánh giá */
+.feedback-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cột trên PC */
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feedback-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 3px solid #098b52;
+}
+
+.feedback-content {
+  text-align: left;
+}
+
+/* ⭐ Định dạng icon sao */
+.rating {
+  display: flex;
+  color: #e9d7b3;
+  margin-bottom: 5px;
+}
+
+.star-icon {
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+.message {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: bold;
+  color: #555;
+}
+
+.name span {
+  color: #777;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .feedback-container {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .avatar {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .feedback-content {
+    text-align: center;
+  }
+
+  /* Điều chỉnh độ dài gạch ngang */
+  .line {
+    max-width: 80px;
+  }
+}

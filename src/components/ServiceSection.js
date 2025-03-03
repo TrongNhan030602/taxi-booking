@@ -4,7 +4,7 @@ import service1 from "../assets/img/taxi-du-lich.png";
 import service2 from "../assets/img/taxi-duong-dai.png";
 import service3 from "../assets/img/taxi-hop-dong.png";
 import service4 from "../assets/img/taxi-du-lich-longxuyen.png";
-import "../assets/css/ServiceSection.css"; // Import file CSS
+import "../assets/css/ServiceSection.css";
 
 const services = [
   { name: "TAXI ĐI GẦN", img: service1 },

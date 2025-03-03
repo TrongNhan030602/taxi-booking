@@ -1,0 +1,112 @@
+.phone-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #098b52;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  animation: ring 1.5s infinite;
+  z-index: 1000;
+}
+
+/* Hiệu ứng icon rung */
+.phone-icon {
+  animation: shake 0.8s infinite alternate;
+}
+
+/* Hiệu ứng xoay nhẹ khi rung */
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  70%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Hiệu ứng rung nhẹ */
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Hiệu ứng rợn sóng nhiều lớp */
+.phone-call-button::before,
+.phone-call-button::after,
+.phone-call-button .wave-1,
+.phone-call-button .wave-2,
+.phone-call-button .wave-3 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  animation: pulse 1.5s infinite;
+}
+
+/* Rợn sóng đậm hơn */
+.phone-call-button::before {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(12, 184, 110, 0.6);
+}
+
+/* Các rợn sóng phụ */
+.phone-call-button::after {
+  width: 75px;
+  height: 75px;
+  background-color: rgba(9, 165, 97, 0.4);
+  animation-delay: 0.3s;
+}
+
+.phone-call-button .wave-1 {
+  width: 85px;
+  height: 85px;
+  background-color: rgba(9, 165, 97, 0.3);
+  animation-delay: 0.8s;
+}
+
+/* Hiệu ứng rợn sóng mở rộng */
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
