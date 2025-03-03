@@ -1,0 +1,82 @@
+.service-section {
+  position: relative;
+  background-image: url("../img/service-bg.jpg");
+  background-size: cover;
+  background-position: center top -76px; /* Dịch nền xuống  */
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  height: 500px;
+  z-index: 2;
+  top: 40px;
+}
+
+.service-phone {
+  font-size: 46px;
+  line-height: 36px;
+  text-align: center;
+  display: block;
+  color: #fff;
+  filter: brightness(95%);
+  margin-top: 11px;
+}
+.service-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.service-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 30px;
+  margin-top: 68px;
+  color: #fff;
+  filter: brightness(95%);
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 2;
+}
+
+.service-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.service-name {
+  font-size: 18px;
+  font-weight: bold;
+  filter: brightness(95%);
+  color: #fff;
+}
+
+.service-name:hover {
+  cursor: auto;
+}

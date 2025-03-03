@@ -1,0 +1,26 @@
+.custom-button {
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hình dạng nút */
+.rectangle {
+  border-radius: 4px;
+}
+.rounded-rectangle {
+  border-radius: 20px;
+}
+
+/* Nút có outline */
+.custom-button.outline {
+  background-color: transparent;
+}
+
+/* Hiệu ứng khi hover */
+.custom-button:hover {
+  opacity: 0.9;
+}
