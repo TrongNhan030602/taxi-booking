@@ -59,11 +59,22 @@
 .feedback-content {
   text-align: left;
 }
+.feedback-link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-link:hover {
+  color: #413e3e;
+  text-decoration: underline;
+}
 
 /* ⭐ Định dạng icon sao */
 .rating {
   display: flex;
-  color: #e9d7b3;
+  color: #f1d498;
   margin-bottom: 5px;
 }
 

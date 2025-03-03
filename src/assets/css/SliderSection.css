@@ -13,11 +13,14 @@
 
 /* Ảnh trong slider */
 .slider-image {
-  width: 100%;
+  width: 100vw;
   height: 400px;
   object-fit: cover;
   filter: brightness(0.3);
   object-position: center bottom;
+  transition: width 0.2s linear, height 0.2s linear;
+  top: 0;
+  left: 0;
 }
 .loading-spinner {
   position: absolute;

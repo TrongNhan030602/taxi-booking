@@ -6,11 +6,11 @@ const PromotionSection = ({ phoneNumber }) => {
   return (
     <div className="promotion-section">
       <div className="content">
-        <h2>TAXI LONG XUYÊN SIÊU RẺ</h2>
+        <h2>TAXI ĐIỆN AN GIANG</h2>
         <p>
-          Chúng tôi tự hào là đơn vị tiên phong trong lĩnh vực dịch vụ Taxi Giá
-          rẻ tại Long Xuyên. Với phương châm lấy chất lượng phục vụ làm kim chỉ
-          nam để xây dựng và phát triển, chúng tôi luôn tự tin mang đến cho
+          Chúng tôi tự hào là đơn vị tiên phong trong lĩnh vực dịch vụ Taxi Điện
+          Giá rẻ tại An Giang. Với phương châm lấy chất lượng phục vụ làm kim
+          chỉ nam để xây dựng và phát triển, chúng tôi luôn tự tin mang đến cho
           khách hàng sự hài lòng lớn nhất, niềm tin cao nhất với một chi phí
           tiết kiệm nhất.
         </p>

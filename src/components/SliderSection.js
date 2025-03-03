@@ -9,7 +9,7 @@ import sliderImage from "../assets/img/slider-bg.jpg";
 import CustomButton from "./CustomButton";
 
 const SliderSection = () => {
-  const phoneNumber = "0913519096";
+  const phoneNumber = "0559596767";
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -68,7 +68,7 @@ const SliderSection = () => {
               className="slider-text"
             >
               <h3 className="slider-title">
-                <strong>TAXILONGXUYENSIEURE.COM</strong>
+                <strong>taxidienangiang</strong>
               </h3>
               <div className="divider"></div>
               <p className="slider-paragraph">

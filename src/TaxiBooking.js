@@ -9,7 +9,7 @@ import CustomerFeedbackSection from "./components/CustomerFeedbackSection";
 import Footer from "./components/Footer";
 import PhoneCallButton from "./components/PhoneCallButton";
 import "./App.css";
-const phoneNumber = "0913519096";
+const phoneNumber = "0559596767";
 
 const TaxiBooking = () => {
   return (
