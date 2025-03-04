@@ -25,7 +25,7 @@
 }
 
 /* Gạch ngang hai bên tiêu đề */
-.line {
+.location-section .line {
   flex-grow: 1;
   height: 2px;
   background-color: #e6e6e6;

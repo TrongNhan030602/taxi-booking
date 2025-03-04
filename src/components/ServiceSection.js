@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import service1 from "../assets/img/taxi-du-lich.png";
-import service2 from "../assets/img/taxi-duong-dai.png";
-import service3 from "../assets/img/taxi-hop-dong.png";
-import service4 from "../assets/img/taxi-du-lich-longxuyen.png";
+import service1 from "../assets/img/icon taxi-01.png";
+import service2 from "../assets/img/icon taxi-02.png";
+import service3 from "../assets/img/icon taxi-03.png";
+import service4 from "../assets/img/icon taxi-04.png";
 import "../assets/css/ServiceSection.css";
 
 const services = [

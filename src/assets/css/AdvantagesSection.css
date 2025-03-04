@@ -1,85 +1,63 @@
 .advantages-container {
   position: relative;
   width: 100%;
-  min-height: 520px;
-  background: url("../img/advantages-bg.jpg") center/cover no-repeat;
+  height: 500px;
+  background: url("../img/banner-04.jpg") center left/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 80px 20px;
+  justify-content: flex-start;
+  padding: 20px;
   overflow: hidden;
 }
 
-.advantages-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  width: 100%;
-  gap: 60px;
-  position: relative;
-  top: -40px;
-}
-
-.advantage-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-}
-
-.advantage-image,
-.car-image {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.3);
-  transition: width 0.3s ease-in-out;
-  margin-bottom: 18px;
-}
-
-.car-image {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out,
-    width 0.3s ease-in-out;
-  box-shadow: none !important;
-}
-
-.booking-button {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-}
-
 @media (max-width: 1024px) {
-  .advantages-content {
-    gap: 40px;
-  }
-
-  .advantage-image,
-  .car-image {
-    max-width: 400px;
+  .advantages-container {
+    background-size: 120%;
+    background-position: left center;
   }
 }
 
-@media (max-width: 768px) {
-  .advantages-content {
-    flex-direction: column;
-    gap: 30px;
+@media (max-width: 1023px) {
+  .advantages-container {
+    height: 400px;
+    background-size: 100%;
+    background-position: center left -30px;
   }
+}
 
-  .advantage-block {
-    align-items: center;
+@media (max-width: 940px) {
+  .advantages-container {
+    height: 480px;
+    background-size: 140%;
+    background-position: center left -26px;
   }
-
-  .advantage-image,
-  .car-image {
-    max-width: 440px;
+}
+@media (max-width: 840px) {
+  .advantages-container {
+    height: 360px;
+    background-size: 120%;
+    background-position: center left -26px;
   }
+}
+@media (max-width: 740px) {
+  .advantages-container {
+    height: 360px;
+    background-size: 136%;
+    background-position: center left -26px;
+  }
+}
 
-  .booking-button {
-    position: static;
-    margin-top: 10px;
+@media (max-width: 640px) {
+  .advantages-container {
+    height: 350px;
+    background-size: 150%;
+    background-position: center left -26px;
+  }
+}
+@media (max-width: 540px) {
+  .advantages-container {
+    height: 330px;
+    background-size: 180%;
+    background-position: center left -26px;
   }
 }

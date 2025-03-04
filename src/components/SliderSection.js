@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 
 import "../assets/css/SliderSection.css";
-import sliderImage from "../assets/img/slider-bg.jpg";
+import sliderImage from "../assets/img/banner-03.jpg";
 import CustomButton from "./CustomButton";
 
 const SliderSection = ({ phoneNumber }) => {

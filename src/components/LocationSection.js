@@ -5,6 +5,7 @@ import "../assets/css/LocationSection.css";
 const locations = [
   "Long Xuyên",
   "Châu Thành",
+  "Phú Hòa",
   "Thốt Nốt",
   "Thoại Sơn",
   "Châu Đốc",
@@ -17,70 +18,77 @@ const locations = [
 
 const buttonStyles = [
   {
-    color: "#981B1E",
-    textColor: "#981B1E",
+    color: "#6789BA",
+    textColor: "#fff",
     hoverTextColor: "#fff",
-    outline: true,
+    outline: false,
     shape: false,
   }, // Long Xuyên
   {
-    color: "#0F0F0F",
+    color: "#6789BA",
     textColor: "#0F0F0F",
     hoverTextColor: "#fff",
     outline: true,
     shape: true,
   }, // Châu Thành
   {
-    color: "#981B1E",
-    textColor: "#981B1E",
+    color: "#6789BA",
+    textColor: "#6789BA",
+    hoverTextColor: "#fff",
+    outline: true,
+    shape: true,
+  }, // Phú Hòa
+  {
+    color: "#6789BA",
+    textColor: "#6789BA",
     hoverTextColor: "#fff",
     outline: true,
     shape: false,
   }, // Thốt Nốt
   {
-    color: "#ffc107",
-    textColor: "#000",
+    color: "#6789BA",
+    textColor: "#fff",
     hoverTextColor: "#fff",
     outline: false,
     shape: true,
   }, // Thoại Sơn
   {
-    color: "#17a2b8",
+    color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: true,
     shape: false,
   }, // Châu Đốc
   {
-    color: "#6f42c1",
+    color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: true,
     shape: true,
   }, // Chợ Mới
   {
-    color: "#e83e8c",
+    color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: true,
     shape: false,
   }, // Tri Tôn
   {
-    color: "#fd7e14",
+    color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: false,
     shape: false,
   }, // Tịnh Biên
   {
-    color: "#20c997",
+    color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: true,
     shape: false,
   }, // Cần Thơ
   {
-    color: "#6610f2",
+    color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: false,

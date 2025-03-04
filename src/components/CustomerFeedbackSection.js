@@ -1,13 +1,13 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import "../assets/css/CustomerFeedbackSection.css";
-import user1 from "../assets/img/user1.jpg";
-import user2 from "../assets/img/user2.jpg";
+import user1 from "../assets/img/avatar1.jpg";
+import user2 from "../assets/img/avatar2.jpg";
 
 const feedbacks = [
   {
     id: 1,
-    name: "Quốc Tỉnh",
+    name: "Trung Hiếu",
     role: "Tự Do",
     avatar: user1,
     message: (
@@ -29,7 +29,7 @@ const feedbacks = [
   },
   {
     id: 2,
-    name: "Lan Anh",
+    name: "Minh Nhật",
     role: "Kinh Doanh",
     avatar: user2,
     message: (
