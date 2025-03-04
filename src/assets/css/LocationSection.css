@@ -1,37 +1,33 @@
-/* LocationSection.css */
 .location-section {
   padding: 50px 20px;
   background-color: #f8f9fa;
   text-align: center;
-  height: 232px;
   position: relative;
+  min-height: 200px;
 }
 
+/* Gạch ngang hai bên tiêu đề */
 .title-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  flex-wrap: nowrap;
 }
 
 .location-section h2 {
   font-weight: 700;
-  margin-bottom: 20px;
   font-size: 19px;
   color: #098b52;
-  position: relative;
-  display: inline-block;
   padding: 0 20px;
+  white-space: nowrap; /* Ngăn tiêu đề bị xuống dòng */
 }
 
-/* Gạch ngang hai bên tiêu đề */
 .location-section .line {
   flex-grow: 1;
   height: 2px;
   background-color: #e6e6e6;
   margin: 0 10px;
   max-width: 444px;
-  margin-bottom: 20px;
 }
 
 .location-buttons {
@@ -54,15 +50,44 @@
     padding: 40px 15px;
   }
 
+  .title-wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
   .location-section h2 {
-    font-size: 17px;
+    font-size: 20px !important;
+    max-width: 80%;
+    text-align: center;
+    white-space: normal;
   }
 
   .line {
-    max-width: 80px;
+    max-width: 100px;
   }
 
   .location-buttons {
     gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-section {
+    padding: 30px 10px;
+  }
+
+  .location-section h2 {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .line {
+    max-width: 60px;
+  }
+
+  .location-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
   }
 }

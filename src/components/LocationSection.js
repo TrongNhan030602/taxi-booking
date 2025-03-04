@@ -29,7 +29,7 @@ const buttonStyles = [
     textColor: "#0F0F0F",
     hoverTextColor: "#fff",
     outline: true,
-    shape: true,
+    shape: false,
   }, // Châu Thành
   {
     color: "#6789BA",
@@ -40,10 +40,10 @@ const buttonStyles = [
   }, // Phú Hòa
   {
     color: "#6789BA",
-    textColor: "#6789BA",
+    textColor: "#fff",
     hoverTextColor: "#fff",
-    outline: true,
-    shape: false,
+    outline: false,
+    shape: true,
   }, // Thốt Nốt
   {
     color: "#6789BA",
@@ -57,20 +57,20 @@ const buttonStyles = [
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: true,
-    shape: false,
+    shape: true,
   }, // Châu Đốc
   {
     color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: true,
-    shape: true,
+    shape: false,
   }, // Chợ Mới
   {
     color: "#6789BA",
     textColor: "#fff",
     hoverTextColor: "#fff",
-    outline: true,
+    outline: false,
     shape: false,
   }, // Tri Tôn
   {

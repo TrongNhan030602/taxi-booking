@@ -1,9 +1,9 @@
 .footer {
-  background: linear-gradient(90deg, #5a3e1b, #b68d40); /* Gradient vàng đồng */
+  background: #53719e;
   font-size: 15px;
   font-weight: bold;
   line-height: 22px;
-  color: #f8d28a; /* Màu vàng đồng sáng */
+  color: #ffffff; /* Màu trắng để dễ đọc */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   position: relative;
   width: 100%;
@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 2px solid rgba(255, 215, 0, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.3);
 }
 

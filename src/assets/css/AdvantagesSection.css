@@ -1,63 +1,25 @@
 .advantages-container {
   position: relative;
   width: 100%;
-  height: 500px;
+  min-height: 480px;
   background: url("../img/banner-04.jpg") center left/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 1024px) {
   .advantages-container {
-    background-size: 120%;
-    background-position: left center;
+    min-height: 400px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   .advantages-container {
-    height: 400px;
-    background-size: 100%;
-    background-position: center left -30px;
-  }
-}
-
-@media (max-width: 940px) {
-  .advantages-container {
-    height: 480px;
-    background-size: 140%;
-    background-position: center left -26px;
-  }
-}
-@media (max-width: 840px) {
-  .advantages-container {
-    height: 360px;
-    background-size: 120%;
-    background-position: center left -26px;
-  }
-}
-@media (max-width: 740px) {
-  .advantages-container {
-    height: 360px;
-    background-size: 136%;
-    background-position: center left -26px;
-  }
-}
-
-@media (max-width: 640px) {
-  .advantages-container {
-    height: 350px;
-    background-size: 150%;
-    background-position: center left -26px;
-  }
-}
-@media (max-width: 540px) {
-  .advantages-container {
-    height: 330px;
-    background-size: 180%;
-    background-position: center left -26px;
+    min-height: 320px;
+    background-position: center left -50px;
   }
 }

@@ -3,12 +3,13 @@
   background-image: url("../img/banner-01.jpg");
   background-size: cover;
   background-position: center top; /* Dịch nền xuống  */
-  padding: 40px 0;
+  padding: 0;
+  margin: 0;
   text-align: center;
   color: var(--text-white);
   overflow: hidden;
   min-height: 500px;
-  z-index: 2;
+  z-index: 1;
   top: 0;
 }
 
@@ -79,4 +80,27 @@
 
 .service-name:hover {
   cursor: auto;
+}
+@media (max-width: 768px) {
+  .service-phone {
+    font-size: 32px;
+  }
+
+  .service-title {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .service-item {
+    min-width: 120px;
+    max-width: 150px;
+  }
+
+  .service-img {
+    width: 70%;
+  }
+
+  .service-name {
+    font-size: 16px;
+  }
 }
