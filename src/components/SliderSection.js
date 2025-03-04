@@ -68,17 +68,17 @@ const SliderSection = () => {
               className="slider-text"
             >
               <h3 className="slider-title">
-                <strong>taxidienangiang</strong>
+                <strong>TAXI ĐIỆN AN GIANG</strong>
               </h3>
               <div className="divider"></div>
               <p className="slider-paragraph">
-                <strong>Giá Mở cửa: 0 Đồng</strong>
+                <strong>Giá Mở cửa: 10.000</strong>
                 <br />
-                Xe 4 chỗ: 12.600 /// trên 30km 10.000 /// hợp đồng trên
+                Xe 4 chỗ: 13.000 /// trên 20km 11.000 /// hợp đồng trên
                 9.000/100km
                 <br />
-                Xe 7 chỗ: 15.600 /// trên 30km 13.000 /// hợp đồng trên
-                12.000/100km
+                Xe 7 chỗ: 15.000 /// trên 20km 13.000 /// hợp đồng trên
+                9.000/100km
                 <br />
                 Xe 29 – 45 chỗ: Ngoài ra, chúng tôi còn phục vụ xe hợp đồng tham
                 quan du lịch với giá cả hợp lý.
