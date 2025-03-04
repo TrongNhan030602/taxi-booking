@@ -8,8 +8,7 @@ import "../assets/css/SliderSection.css";
 import sliderImage from "../assets/img/slider-bg.jpg";
 import CustomButton from "./CustomButton";
 
-const SliderSection = () => {
-  const phoneNumber = "0559596767";
+const SliderSection = ({ phoneNumber }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

@@ -20,7 +20,7 @@ const feedbacks = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          Taxidienangiang.info.vn
+          taxidienangiang.info.vn
         </a>
         . Ngồi sau tay lái của các bác tài ở đây tôi hoàn toàn an tâm và tin
         cậy.
@@ -42,7 +42,7 @@ const feedbacks = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          Taxidienangiang.info.vn
+          taxidienangiang.info.vn
         </a>
         , giá rẻ thoải mái, lên xe nhắm mắt là đến nơi cực kì khỏe, an toàn và
         rất tin cậy.

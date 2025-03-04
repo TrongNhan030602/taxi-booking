@@ -1,4 +1,5 @@
 .custom-button {
+  position: relative; /* Cần để định vị tooltip */
   padding: 8px 24px;
   font-size: 16px;
   font-weight: bold;
