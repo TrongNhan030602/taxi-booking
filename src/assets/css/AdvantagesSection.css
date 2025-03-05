@@ -23,3 +23,21 @@
     background-position: center left -50px;
   }
 }
+
+@media (min-width: 1400px) and (max-width: 1940px) {
+  .advantages-container {
+    min-height: 780px;
+  }
+}
+
+@media (min-width: 1940px) {
+  .advantages-container {
+    min-height: 1000px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .advantages-container {
+    min-height: 1900px;
+  }
+}

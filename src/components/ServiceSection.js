@@ -21,7 +21,7 @@ const ServiceSection = ({ phoneNumber }) => {
   return (
     <div className="service-section">
       <div>
-        <p className="service-phone">0559596767</p>
+        <p className="service-phone">0559.59.67.67</p>
         <h3 className="service-title ">DỊCH VỤ TAXI CỦA CHÚNG TÔI</h3>
         <div className="service-container">
           {services.map((service, index) => (

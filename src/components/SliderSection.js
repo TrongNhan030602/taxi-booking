@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -18,7 +19,7 @@ const SliderSection = ({ phoneNumber }) => {
   }, []);
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -70,14 +71,27 @@ const SliderSection = ({ phoneNumber }) => {
                 <strong>TAXI ĐIỆN AN GIANG</strong>
               </h3>
               <div className="divider"></div>
+              <motion.p
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="slider-slogan"
+              >
+                Taxi giá rẻ ... đi an toàn về vui vẻ ... uy tín chất lượng
+              </motion.p>
               <p className="slider-paragraph">
-                <strong>Giá Mở cửa: 10.000</strong>
+                <strong>
+                  Giá Mở cửa: <span className="slider-price">10.000</span>{" "}
+                </strong>
                 <br />
-                Xe 4 chỗ: 13.000 /// trên 20km 11.000 /// hợp đồng trên
-                9.000/100km
+                Xe 4 chỗ: <span className="slider-price">13.000</span> /// trên
+                20km <span className="slider-price">11.000</span> /// hợp đồng
+                trên <span className="slider-price">9.000</span>/100km
                 <br />
-                Xe 7 chỗ: 15.000 /// trên 20km 13.000 /// hợp đồng trên
-                9.000/100km
+                Xe 7 chỗ: <span className="slider-price">15.000</span> /// trên
+                20km <span className="slider-price">13.000</span> /// hợp đồng
+                trên
+                <span className="slider-price">9.000</span>/100km
                 <br />
                 Xe 29 – 45 chỗ: Ngoài ra, chúng tôi còn phục vụ xe hợp đồng tham
                 quan du lịch với giá cả hợp lý.

@@ -8,6 +8,7 @@ import PromotionSection from "./components/PromotionSection";
 import CustomerFeedbackSection from "./components/CustomerFeedbackSection";
 import Footer from "./components/Footer";
 import PhoneCallButton from "./components/PhoneCallButton";
+import ZaloButton from "./components/ZaloButton";
 import "./App.css";
 const phoneNumber = "0559596767";
 
@@ -17,12 +18,13 @@ const TaxiBooking = () => {
       <Header />
       <SliderSection phoneNumber={phoneNumber} />
       <ServiceSection phoneNumber={phoneNumber} />
-      <AdvantagesSection phoneNumber={phoneNumber} />
+      <AdvantagesSection />
       <LocationSection phoneNumber={phoneNumber} />
       <PromotionSection phoneNumber={phoneNumber} />
       <CustomerFeedbackSection />
       <Footer />
       <PhoneCallButton phoneNumber={phoneNumber} />
+      <ZaloButton phoneNumber={phoneNumber} />
     </div>
   );
 };

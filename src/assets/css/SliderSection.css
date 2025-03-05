@@ -43,6 +43,14 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+.slider-slogan {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffcc00;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
 
 .slider-text {
   font-size: 16px;
@@ -78,6 +86,11 @@
   font-style: italic;
   font-size: 16px;
 }
+.slider-price {
+  color: #e7aa11; /* Màu vàng đồng */
+  font-weight: bold;
+}
+
 /* Gạch chia */
 .divider {
   max-width: 100%;
@@ -106,10 +119,13 @@
 
 @media (max-width: 1024px) {
   .slider-container {
-    height: 360px;
+    height: 400px;
+  }
+  .slider-text {
+    margin-top: 20px;
   }
   .slider-image {
-    height: 360px;
+    height: 400px;
     background-position: center center;
   }
   .slider-title {
@@ -121,18 +137,20 @@
 }
 @media (max-width: 768px) {
   .slider-container {
-    height: 320px;
+    height: 66vh; /* Đặt chiều cao linh hoạt */
   }
   .slider-image {
-    height: 320px;
-    object-position: center left;
-    background-size: 150%;
+    height: 66vh;
+    object-fit: cover;
+    object-position: center;
   }
   .slider-text {
+    /* top: 40%; */
+    transform: translate(-50%, -40%);
     max-width: 90%;
   }
   .slider-title {
-    font-size: 24px;
+    font-size: 22px;
   }
   .slider-paragraph {
     font-size: 14px;
@@ -140,29 +158,5 @@
   .call-button {
     padding: 10px 16px;
     font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .slider-container {
-    height: 310px;
-  }
-  .slider-image {
-    height: 310px;
-    background-size: 180%;
-    object-position: center left -20px;
-  }
-  .slider-text {
-    margin-top: 10px;
-  }
-  .slider-title {
-    font-size: 20px;
-  }
-  .slider-paragraph {
-    font-size: 13px;
-  }
-  .call-button {
-    padding: 8px 14px;
-    font-size: 13px;
   }
 }

@@ -25,72 +25,72 @@ const buttonStyles = [
     shape: false,
   }, // Long Xuyên
   {
-    color: "#6789BA",
-    textColor: "#0F0F0F",
+    color: "#FF6B6B",
+    textColor: "#fff",
     hoverTextColor: "#fff",
     outline: true,
     shape: false,
   }, // Châu Thành
   {
-    color: "#6789BA",
-    textColor: "#6789BA",
-    hoverTextColor: "#fff",
+    color: "#4CAF50",
+    textColor: "#fff",
+    hoverTextColor: "#ddd",
     outline: true,
     shape: true,
   }, // Phú Hòa
   {
-    color: "#6789BA",
+    color: "#FF9800",
     textColor: "#fff",
-    hoverTextColor: "#fff",
+    hoverTextColor: "#eee",
     outline: false,
     shape: true,
   }, // Thốt Nốt
   {
-    color: "#6789BA",
+    color: "#3F51B5",
     textColor: "#fff",
     hoverTextColor: "#fff",
     outline: false,
     shape: true,
   }, // Thoại Sơn
   {
-    color: "#6789BA",
+    color: "#795548",
     textColor: "#fff",
-    hoverTextColor: "#fff",
+    hoverTextColor: "#ddd",
     outline: true,
     shape: true,
   }, // Châu Đốc
   {
-    color: "#6789BA",
+    color: "#E91E63",
     textColor: "#fff",
-    hoverTextColor: "#fff",
+    hoverTextColor: "#eee",
     outline: true,
     shape: false,
   }, // Chợ Mới
   {
-    color: "#6789BA",
+    color: "#009688",
     textColor: "#fff",
-    hoverTextColor: "#fff",
+    hoverTextColor: "#ddd",
     outline: false,
     shape: false,
   }, // Tri Tôn
   {
-    color: "#6789BA",
+    color: "#9C27B0",
     textColor: "#fff",
-    hoverTextColor: "#fff",
+    hoverTextColor: "#eee",
     outline: false,
     shape: false,
   }, // Tịnh Biên
   {
-    color: "#6789BA",
-    textColor: "#fff",
-    hoverTextColor: "#fff",
+    color: "#FFC107",
+    textColor: "#333",
+    hoverTextColor: "#000",
     outline: true,
     shape: false,
   }, // Cần Thơ
   {
-    color: "#6789BA",
+    color: "#607D8B",
     textColor: "#fff",
-    hoverTextColor: "#fff",
+    hoverTextColor: "#ddd",
     outline: false,
     shape: true,
   }, // Hà Tiên
