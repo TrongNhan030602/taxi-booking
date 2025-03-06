@@ -96,6 +96,77 @@
   animation: pulse-ring 1.5s infinite;
 }
 
+.phone-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Chữ cong nửa trên */
+/* Chữ cong nửa trên */
+.curved-text-half {
+  position: absolute;
+  width: 80px;
+  height: 62px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Chữ */
+.curved-text-half text {
+  font-size: 13px;
+  font-weight: bold;
+  fill: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap; /* Đảm bảo không lặp lại */
+  animation: blinkText 1.5s infinite alternate ease-in-out;
+}
+
+/* Nhấp nháy chữ cùng button */
+@keyframes blinkText {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Nhấp nháy chữ cùng button */
+@keyframes blinkText {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hiệu ứng chữ xoay quanh nút */
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text-shake {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 .phone-call-button::before {
   width: 60px;
   height: 60px;
@@ -125,4 +196,27 @@
     transform: translate(-50%, -50%) scale(2);
     opacity: 0;
   }
+}
+.phone-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.curved-text {
+  position: absolute;
+  top: -18px; /* Dịch lên trên */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 50px;
+  pointer-events: none; /* Ngăn chặn tương tác */
+}
+
+.curved-text text {
+  fill: white;
+  font-size: 13px;
+  font-weight: bold;
 }
