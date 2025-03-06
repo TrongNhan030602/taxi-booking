@@ -1,7 +1,59 @@
-.phone-call-button {
+.phone-call-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Mũi tên chứa chữ */
+.call-text {
+  width: 142px; /* Thân dài hơn */
+  height: 30px; /* Giảm chiều cao */
+  background: #4381f0;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 30px;
+  border-radius: 4px; /* Giảm độ cong */
+  animation: slide-loop 1.4s infinite ease-in-out;
+}
+@keyframes slide-loop {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0.3;
+  }
+}
+
+/* Đầu mũi tên */
+.call-text::after {
+  content: "";
+  position: absolute;
+  right: -25px; /* Điều chỉnh vị trí */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 50px;
+  border-left: 30px solid #4381f0; /* Làm nhọn hơn */
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+
+/* Nút gọi */
+.phone-call-button {
   background-color: #098b52;
   color: white;
   width: 55px;
@@ -13,45 +65,14 @@
   font-size: 24px;
   text-decoration: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  animation: ring 1.5s infinite;
-  z-index: 1000;
+  position: relative;
 }
 
-/* Hiệu ứng icon rung */
+/* Icon phone rung nhẹ */
 .phone-icon {
   animation: shake 0.8s infinite alternate;
 }
 
-/* Hiệu ứng xoay nhẹ khi rung */
-@keyframes ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(15deg);
-  }
-  20% {
-    transform: rotate(-15deg);
-  }
-  30% {
-    transform: rotate(10deg);
-  }
-  40% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  60% {
-    transform: rotate(-5deg);
-  }
-  70%,
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-/* Hiệu ứng rung nhẹ */
 @keyframes shake {
   0% {
     transform: scale(1);
@@ -61,12 +82,10 @@
   }
 }
 
-/* Hiệu ứng rợn sóng nhiều lớp */
+/* Hiệu ứng rợn sóng */
 .phone-call-button::before,
 .phone-call-button::after,
-.phone-call-button .wave-1,
-.phone-call-button .wave-2,
-.phone-call-button .wave-3 {
+.phone-call-button .wave-1 {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -74,17 +93,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  animation: pulse 1.5s infinite;
+  animation: pulse-ring 1.5s infinite;
 }
 
-/* Rợn sóng đậm hơn */
 .phone-call-button::before {
   width: 60px;
   height: 60px;
   background-color: rgba(12, 184, 110, 0.6);
 }
 
-/* Các rợn sóng phụ */
 .phone-call-button::after {
   width: 75px;
   height: 75px;
@@ -99,8 +116,7 @@
   animation-delay: 0.8s;
 }
 
-/* Hiệu ứng rợn sóng mở rộng */
-@keyframes pulse {
+@keyframes pulse-ring {
   0% {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
