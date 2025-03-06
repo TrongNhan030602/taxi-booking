@@ -24,13 +24,13 @@
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1940px) {
+@media (min-width: 1360px) and (max-width: 1940px) {
   .advantages-container {
     min-height: 780px;
   }
 }
 
-@media (min-width: 1940px) {
+@media (min-width: 1941px) {
   .advantages-container {
     min-height: 1000px;
   }

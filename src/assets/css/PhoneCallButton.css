@@ -105,7 +105,6 @@
 }
 
 /* Chữ cong nửa trên */
-/* Chữ cong nửa trên */
 .curved-text-half {
   position: absolute;
   width: 80px;
@@ -135,35 +134,6 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-/* Nhấp nháy chữ cùng button */
-@keyframes blinkText {
-  0% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Hiệu ứng chữ xoay quanh nút */
-@keyframes rotateText {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes text-shake {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
   }
 }
 
@@ -207,12 +177,12 @@
 
 .curved-text {
   position: absolute;
-  top: -18px; /* Dịch lên trên */
+  top: -18px;
   left: 50%;
   transform: translateX(-50%);
   width: 120px;
   height: 50px;
-  pointer-events: none; /* Ngăn chặn tương tác */
+  pointer-events: none;
 }
 
 .curved-text text {
