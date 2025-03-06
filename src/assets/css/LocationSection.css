@@ -21,6 +21,21 @@
   padding: 0 20px;
   white-space: nowrap; /* Ngăn tiêu đề bị xuống dòng */
 }
+.click-hint {
+  font-size: 16px;
+  color: #ff5733; /* Màu cam nổi bật */
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Tạo khoảng cách giữa icon và chữ */
+}
+
+.click-icon {
+  color: #ffcc00;
+  font-size: 22px;
+}
 
 .location-section .line {
   flex-grow: 1;

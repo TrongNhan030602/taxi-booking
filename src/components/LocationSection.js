@@ -1,4 +1,5 @@
 import React from "react";
+import { FaHandPointer } from "react-icons/fa";
 import CustomButton from "./CustomButton";
 import "../assets/css/LocationSection.css";
 
@@ -14,6 +15,7 @@ const locations = [
   "Tịnh Biên",
   "Cần Thơ",
   "Hà Tiên",
+  "Đ.Điểm Khác",
 ];
 
 const buttonStyles = [
@@ -94,6 +96,13 @@ const buttonStyles = [
     outline: false,
     shape: true,
   }, // Hà Tiên
+  {
+    color: "#8E0000",
+    textColor: "#fff",
+    hoverTextColor: "#ddd",
+    outline: true,
+    shape: true,
+  }, // Địa điểm khác
 ];
 
 const LocationSection = ({ phoneNumber }) => {
@@ -104,6 +113,10 @@ const LocationSection = ({ phoneNumber }) => {
         <h2>ĐỊA ĐIỂM ĐẶT XE</h2>
         <div className="line"></div>
       </div>
+      <p className="click-hint">
+        NHẤP VÀO ĐỊA ĐIỂM ĐỂ GỌI XE NGAY
+        <FaHandPointer className="click-icon mx-1" />
+      </p>
       <div className="location-buttons">
         {locations.map((location, index) => {
           const { color, textColor, hoverTextColor, outline, shape } =
