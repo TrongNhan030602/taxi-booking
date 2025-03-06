@@ -8,12 +8,12 @@ const feedbacks = [
   {
     id: 1,
     name: "Trung Hiếu",
-    role: "Tự Do",
+    role: "Nhân viên văn phòng",
     avatar: user1,
     message: (
       <>
-        Mỗi khi đi xa gặp gỡ khách hàng, ngại vấn đề lái xe cá nhân thì tôi lại
-        book dịch vụ của{" "}
+        Tôi thường xuyên phải di chuyển để gặp khách hàng, việc tự lái xe khá
+        mệt mỏi. Từ khi biết đến{" "}
         <a
           href="https://taxidienangiang.info.vn"
           className="feedback-link"
@@ -22,20 +22,19 @@ const feedbacks = [
         >
           taxidienangiang.info.vn
         </a>
-        . Ngồi sau tay lái của các bác tài ở đây tôi hoàn toàn an tâm và tin
-        cậy.
+        , tôi không còn lo nghĩ về việc di chuyển nữa. Tài xế nhiệt tình, xe
+        chạy êm, đúng giờ, rất hài lòng!
       </>
     ),
   },
   {
     id: 2,
     name: "Minh Nhật",
-    role: "Kinh Doanh",
+    role: "Chủ cửa hàng",
     avatar: user2,
     message: (
       <>
-        Tôi thường xuyên đi gặp khách hàng ở xa, chạy xe máy thì khá mệt, nên
-        tôi chọn{" "}
+        Mỗi lần đi công tác xa, tôi luôn chọn{" "}
         <a
           href="https://taxidienangiang.info.vn"
           className="feedback-link"
@@ -44,8 +43,8 @@ const feedbacks = [
         >
           taxidienangiang.info.vn
         </a>
-        , giá rẻ thoải mái, lên xe nhắm mắt là đến nơi cực kì khỏe, an toàn và
-        rất tin cậy.
+        . Dịch vụ nhanh chóng, tài xế lái xe an toàn, giá cả hợp lý. Chỉ cần lên
+        xe, tôi có thể nghỉ ngơi mà không phải lo lắng gì!
       </>
     ),
   },
