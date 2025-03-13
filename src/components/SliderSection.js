@@ -90,8 +90,7 @@ const SliderSection = ({ phoneNumber }) => {
                 <br />
                 Xe 7 chỗ: <span className="slider-price">15.000</span> /// trên
                 20km <span className="slider-price">13.000</span> /// hợp đồng
-                trên
-                <span className="slider-price">9.000</span>/100km
+                trên <span className="slider-price">9.000</span>/100km
                 <br />
                 Xe 29 – 45 chỗ: Ngoài ra, chúng tôi còn phục vụ xe hợp đồng tham
                 quan du lịch với giá cả hợp lý.
