@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 480px;
-  background: url("../img/banner-04.jpg") center left/cover no-repeat;
+  background: url("../../img/banner-04.jpg") center left/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-start;

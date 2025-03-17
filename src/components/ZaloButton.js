@@ -1,6 +1,6 @@
 import React from "react";
 import zaloIcon from "../assets/img/zalo.png";
-import "../assets/css/ZaloButton.css";
+import "../assets/css/home/ZaloButton.css";
 
 const isValidPhoneNumber = (phone) => {
   const phoneRegex = /^[0-9()+\- ]{8,15}$/; // Chỉ cho phép số, dấu +, -, khoảng trắng, ngoặc đơn

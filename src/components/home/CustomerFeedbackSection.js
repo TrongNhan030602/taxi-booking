@@ -1,8 +1,8 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import "../assets/css/CustomerFeedbackSection.css";
-import user1 from "../assets/img/avatar1.jpg";
-import user2 from "../assets/img/avatar2.jpg";
+import "../../assets/css/home/CustomerFeedbackSection.css";
+import user1 from "../../assets/img/avatar1.jpg";
+import user2 from "../../assets/img/avatar2.jpg";
 
 const feedbacks = [
   {

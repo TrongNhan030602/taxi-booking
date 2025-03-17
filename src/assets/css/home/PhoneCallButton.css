@@ -69,7 +69,7 @@
 }
 
 /* Icon phone rung nhẹ */
-.phone-icon {
+.phone-icon-shake {
   animation: shake 0.8s infinite alternate;
 }
 

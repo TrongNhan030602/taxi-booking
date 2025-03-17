@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHandPointer } from "react-icons/fa";
 import CustomButton from "./CustomButton";
-import "../assets/css/LocationSection.css";
+import "../../assets/css/home/LocationSection.css";
 
 const locations = [
   "Long Xuyên",

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
-import "../assets/css/PhoneCallButton.css";
+import "../assets/css/home/PhoneCallButton.css";
 
 const PhoneCallButton = ({ phoneNumber }) => {
   // Chỉ cho phép số và dấu "+"
@@ -24,7 +24,7 @@ const PhoneCallButton = ({ phoneNumber }) => {
             href={`tel:${sanitizedPhoneNumber}`}
             className="phone-call-button"
           >
-            <FaPhoneAlt className="phone-icon" />
+            <FaPhoneAlt className="phone-icon-shake" />
             <span className="wave-1"></span>
           </a>
         ) : (

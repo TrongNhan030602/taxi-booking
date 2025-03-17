@@ -1,0 +1,150 @@
+.services-container {
+  width: calc(100% - 180px);
+  max-width: 1400px;
+  margin: auto;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.6rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.services-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Bố cục 2 cột */
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.services-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.service-card {
+  background: linear-gradient(135deg, #ff9a3f, #ff6f00);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(255, 111, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(255, 111, 0, 0.6);
+}
+.service-card-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+/* Hình chiếc xe */
+.taxi-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taxi-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.taxi-image:hover {
+  transform: scale(1.1);
+}
+
+/* Tổng đài taxi */
+.service-highlight {
+  margin-top: 40px;
+  padding: 20px;
+  background: #333;
+  color: white;
+  border-radius: 12px;
+}
+
+.highlight-phone {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.phone-icon {
+  margin-right: 8px;
+  color: #ff9a3f;
+}
+
+.highlight-text {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Điều chỉnh layout trên màn hình nhỏ */
+@media (max-width: 768px) {
+  .services-container {
+    width: 100%;
+    padding: 100px 20px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .services-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .services-list {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .taxi-image {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  .service-highlight {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .highlight-phone {
+    font-size: 1.3rem;
+  }
+}

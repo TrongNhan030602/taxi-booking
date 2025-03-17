@@ -1,0 +1,185 @@
+.taxi-directory-container {
+  width: calc(100% - 180px);
+  max-width: 1400px;
+  margin: auto;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.taxi-directory-title {
+  font-size: 2.6rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.taxi-directory-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.taxi-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.taxi-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.taxi-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.taxi-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+}
+
+.taxi-item h3 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.taxi-item p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  color: #e67e22;
+  margin-right: 8px;
+}
+
+.taxi-phone {
+  font-weight: bold;
+  color: #e67e22;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.taxi-phone:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+.taxi-note {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fef2e0;
+  border-left: 5px solid #e67e22;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.taxi-note h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.taxi-note p {
+  font-size: 1.1rem;
+  color: #555;
+}
+.taxi-conclusion {
+  margin-top: 50px;
+  padding: 25px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  text-align: left;
+  border-left: 5px solid #e67e22;
+}
+
+.taxi-conclusion h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.taxi-conclusion p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+/* Làm nổi bật card đầu tiên */
+.featured-taxi {
+  background: linear-gradient(135deg, #f39e53, #e18d4c); /* Màu cam nổi bật */
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(255, 111, 0, 0.4);
+  transform: scale(1.02); /* Phóng to nhẹ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Khi hover vào card đầu tiên */
+.featured-taxi:hover {
+  box-shadow: 0px 8px 20px rgba(255, 111, 0, 0.6);
+}
+
+/* Điều chỉnh font chữ và icon */
+.featured-taxi h3 {
+  font-size: 1.5rem;
+}
+
+.featured-taxi .taxi-phone {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.featured-taxi .phone-icon {
+  color: #ffe600;
+}
+
+@media (max-width: 768px) {
+  .taxi-directory-container {
+    width: 100%;
+    padding: 100px 20px;
+  }
+
+  .taxi-directory-title {
+    font-size: 2.4rem;
+  }
+
+  .taxi-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .taxi-item p {
+    font-size: 1rem;
+  }
+
+  .taxi-note {
+    padding: 15px;
+  }
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import service1 from "../assets/img/icon taxi-01.png";
-import service2 from "../assets/img/icon taxi-02.png";
-import service3 from "../assets/img/icon taxi-03.png";
-import service4 from "../assets/img/icon taxi-04.png";
-import "../assets/css/ServiceSection.css";
+import service1 from "../../assets/img/icon taxi-01.png";
+import service2 from "../../assets/img/icon taxi-02.png";
+import service3 from "../../assets/img/icon taxi-03.png";
+import service4 from "../../assets/img/icon taxi-04.png";
+import "../../assets/css/home/ServiceSection.css";
 
 const services = [
   { name: "TAXI ĐI GẦN", img: service1 },

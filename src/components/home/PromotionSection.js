@@ -1,6 +1,6 @@
 import React from "react";
 import CustomButton from "./CustomButton";
-import "../assets/css/PromotionSection.css";
+import "../../assets/css/home/PromotionSection.css";
 
 const PromotionSection = ({ phoneNumber }) => {
   // Kiểm tra số điện thoại chỉ chứa số và dấu "+"
