@@ -3,6 +3,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 import "../assets/css/PhoneCallButton.css";
 
 const PhoneCallButton = ({ phoneNumber }) => {
+  // Chỉ cho phép số và dấu "+"
+  const sanitizedPhoneNumber = /^[\d+]+$/.test(phoneNumber)
+    ? phoneNumber
+    : null;
+
   return (
     <div className="phone-call-container">
       {/* Chữ + Mũi tên */}
@@ -13,14 +18,18 @@ const PhoneCallButton = ({ phoneNumber }) => {
 
       {/* Nút gọi điện + Chữ cong */}
       <div className="phone-wrapper">
-        {/* Nút gọi */}
-        <a
-          href={`tel:${phoneNumber}`}
-          className="phone-call-button"
-        >
-          <FaPhoneAlt className="phone-icon" />
-          <span className="wave-1"></span>
-        </a>
+        {/* Kiểm tra số điện thoại hợp lệ trước khi render nút gọi */}
+        {sanitizedPhoneNumber ? (
+          <a
+            href={`tel:${sanitizedPhoneNumber}`}
+            className="phone-call-button"
+          >
+            <FaPhoneAlt className="phone-icon" />
+            <span className="wave-1"></span>
+          </a>
+        ) : (
+          <p className="invalid-number">Số điện thoại không hợp lệ</p>
+        )}
 
         {/* Chữ cong nửa trên */}
         <svg

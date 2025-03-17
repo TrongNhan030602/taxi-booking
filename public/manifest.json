@@ -10,18 +10,14 @@
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "64x64 32x32 24x24 16x16"
-
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "64x64 32x32 24x24 16x16"
-
+      "sizes": "64x64 32x32 24x24 16x16",
+      "purpose": "maskable any"
     }
   ],
-  "start_url": ".",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary"
 }

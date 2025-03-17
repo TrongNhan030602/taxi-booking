@@ -3,6 +3,11 @@ import CustomButton from "./CustomButton";
 import "../assets/css/PromotionSection.css";
 
 const PromotionSection = ({ phoneNumber }) => {
+  // Kiểm tra số điện thoại chỉ chứa số và dấu "+"
+  const sanitizedPhoneNumber = /^[\d+]+$/.test(phoneNumber)
+    ? phoneNumber
+    : null;
+
   return (
     <div className="promotion-section">
       <div className="content">
@@ -14,16 +19,23 @@ const PromotionSection = ({ phoneNumber }) => {
           tiết kiệm nhất. Lựa chọn chúng tôi - lựa chọn sự an tâm trên từng
           chặng đường!
         </p>
-        <CustomButton
-          text="Gọi Taxi Ngay"
-          color="#ff0000"
-          textColor="#fff"
-          hoverTextColor="#fff"
-          outline={false}
-          shape="rounded-rectangle"
-          onClick={() => (window.location.href = `tel:${phoneNumber}`)}
-          className="promotion-button"
-        />
+
+        {sanitizedPhoneNumber ? (
+          <CustomButton
+            text="Gọi Taxi Ngay"
+            color="#ff0000"
+            textColor="#fff"
+            hoverTextColor="#fff"
+            outline={false}
+            shape="rounded-rectangle"
+            onClick={() =>
+              (window.location.href = `tel:${sanitizedPhoneNumber}`)
+            }
+            className="promotion-button"
+          />
+        ) : (
+          <p className="invalid-number">Số điện thoại không hợp lệ</p>
+        )}
       </div>
     </div>
   );

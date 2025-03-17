@@ -2,9 +2,10 @@ import React from "react";
 import "../assets/css/Footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
-      Copyright 2025 ©
+      Copyright {currentYear} ©
       <a
         href="https://taxidienangiang.info.vn"
         className="footer-brand mx-1"

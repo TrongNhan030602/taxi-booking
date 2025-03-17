@@ -13,9 +13,17 @@ const services = [
   { name: "TAXI DU LỊCH", img: service4 },
 ];
 
+// Hàm kiểm tra và làm sạch số điện thoại
+const sanitizePhoneNumber = (phone) => {
+  return phone.replace(/[^0-9+]/g, "");
+};
+
 const ServiceSection = ({ phoneNumber }) => {
   const handleCall = () => {
-    window.location.href = `tel:${phoneNumber}`;
+    const safePhoneNumber = sanitizePhoneNumber(phoneNumber);
+    if (safePhoneNumber) {
+      window.location.href = `tel:${safePhoneNumber}`;
+    }
   };
 
   return (
