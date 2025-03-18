@@ -1,26 +1,32 @@
 :root {
   --text-white: #fff;
-  --header-height: 80px;
+  --header-height: 120px; /* Tăng chiều cao tổng thể */
   --menu-bg: rgba(0, 0, 0, 0.9);
   --active-color: #ffdd57;
 }
 
 /* Header */
 .header {
-  height: var(--header-height);
   width: 100%;
   background: linear-gradient(135deg, #141414, #1f1f1f);
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Logo */
+/* Dòng trên: Logo + Hotline */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .header__logo {
   display: flex;
   align-items: center;
@@ -28,7 +34,7 @@
 
 .header__logo-img {
   height: 60px;
-  max-width: 212px;
+  max-width: 200px;
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -38,16 +44,42 @@
   opacity: 0.9;
 }
 
-/* Navbar */
+/* Hotline */
+.hotline {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-white);
+}
+
+.hotline a {
+  color: var(--active-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hotline a:hover {
+  color: orange;
+}
+
+/* Dòng dưới: Navbar */
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .navbar {
-  margin-left: auto;
+  width: 100%;
+  text-align: center;
 }
 
 .navbar__list {
   display: flex;
+  justify-content: center;
   gap: 20px;
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -101,6 +133,7 @@
   cursor: pointer;
   font-size: 24px;
   color: var(--text-white);
+  margin-right: 12px;
 }
 
 @media screen and (max-width: 992px) {
@@ -130,20 +163,27 @@
 
   .navbar.open {
     transform: translateX(0);
-  }
-  .header__logo-img {
-    height: 60px;
-    max-width: 224px;
-    object-fit: contain;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-top: 16px;
   }
 }
 
-@media (max-width: 970px) {
+/* Responsive chỉnh sửa khoảng cách */
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+
   .header__logo-img {
-    height: 60px;
-    max-width: 300px;
-    object-fit: contain;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    height: 50px;
+  }
+
+  .hotline {
+    font-size: 16px;
+  }
+
+  .navbar {
+    width: 100%;
   }
 }

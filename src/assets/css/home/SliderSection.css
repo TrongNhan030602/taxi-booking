@@ -2,7 +2,7 @@
 .slider-container {
   position: relative;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 114px;
   height: 400px;
   font-size: 16px;
   line-height: 24px;
@@ -66,6 +66,7 @@
   max-width: 800px;
   z-index: 10;
   display: block;
+  margin-top: 12px;
 }
 .slider-item {
   position: relative;
@@ -137,10 +138,11 @@
 }
 @media (max-width: 768px) {
   .slider-container {
-    height: 66vh; /* Đặt chiều cao linh hoạt */
+    height: 80vh;
+    margin-top: 66px;
   }
   .slider-image {
-    height: 66vh;
+    height: 80vh;
     object-fit: cover;
     object-position: center;
   }

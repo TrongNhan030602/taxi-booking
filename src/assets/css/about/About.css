@@ -3,7 +3,7 @@
   width: calc(100% - 180px);
   max-width: 1400px;
   margin: auto;
-  padding: 120px 0;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -196,7 +196,7 @@
 @media (max-width: 768px) {
   .about-container {
     width: 100%;
-    padding: 80px 20px;
+    padding: 200px 20px;
   }
   .about-title {
     font-size: 2.2rem;

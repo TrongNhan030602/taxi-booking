@@ -38,51 +38,57 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* Logo */}
-      <Link
-        to="/"
-        className="header__logo"
-      >
-        <img
-          src={headerImage}
-          alt="Taxi Logo"
-          className="header__logo-img"
-        />
-      </Link>
-
-      {/* Toggle menu */}
-      <div
-        className="menu-toggle"
-        ref={toggleRef}
-        onClick={() => setIsOpen((prev) => !prev)}
-      >
-        ☰
+      {/* Dòng trên: Logo + Hotline */}
+      <div className="top-header">
+        <Link
+          to="/"
+          className="header__logo"
+        >
+          <img
+            src={headerImage}
+            alt="Taxi Logo"
+            className="header__logo-img"
+          />
+        </Link>
+        <div className="hotline">
+          <span>📞 Hotline 24/7:</span>{" "}
+          <a href="tel:0559596767"> 055 959 6767</a>
+        </div>
       </div>
 
-      {/* Navbar */}
-      <nav
-        className={`navbar ${isOpen ? "open" : ""}`}
-        ref={menuRef}
-      >
-        <ul className="navbar__list">
-          {menuItems.map((item) => (
-            <li
-              key={item.path}
-              className="navbar__item"
-            >
-              <Link
-                to={item.path}
-                className={`navbar__link ${
-                  location.pathname === item.path ? "active" : ""
-                }`}
-                onClick={() => setIsOpen(false)}
+      {/* Dòng dưới: Navbar */}
+      <div className="nav-wrapper">
+        <div
+          className="menu-toggle"
+          ref={toggleRef}
+          onClick={() => setIsOpen((prev) => !prev)}
+        >
+          ☰
+        </div>
+        <nav
+          className={`navbar ${isOpen ? "open" : ""}`}
+          ref={menuRef}
+        >
+          <ul className="navbar__list">
+            {menuItems.map((item) => (
+              <li
+                key={item.path}
+                className="navbar__item"
               >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+                <Link
+                  to={item.path}
+                  className={`navbar__link ${
+                    location.pathname === item.path ? "active" : ""
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
