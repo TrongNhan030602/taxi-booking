@@ -1,0 +1,142 @@
+.pricing-container {
+  width: calc(100% - 180px);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.pricing-title {
+  font-size: 2.6rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.pricing-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Responsive grid: Điều chỉnh số cột tự động */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Card style */
+.pricing-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.pricing-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Hiệu ứng nổi bật */
+.pricing-highlight {
+  margin-top: 20px;
+}
+
+.pricing-slogan {
+  font-size: 1.2rem;
+  color: #555;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0 34px 0;
+}
+
+/* Nút Gọi ngay */
+.pricing-button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: #2c3e50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  text-decoration: none;
+}
+
+.pricing-button:hover {
+  background: #0056b3;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.4);
+}
+
+.pricing-button:active {
+  transform: scale(0.95);
+}
+.pricing-link {
+  text-decoration: none;
+}
+/* 📱 Mobile: Tăng kích thước card */
+@media (max-width: 768px) {
+  .pricing-container {
+    width: calc(100% - 40px);
+  }
+
+  .pricing-title {
+    font-size: 1.8rem;
+  }
+
+  .pricing-description {
+    font-size: 1rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .pricing-card {
+    padding: 30px;
+  }
+
+  .pricing-label {
+    font-size: 1.1rem;
+  }
+
+  .pricing-value {
+    font-size: 1.5rem;
+  }
+
+  .pricing-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

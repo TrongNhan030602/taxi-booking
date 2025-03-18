@@ -44,7 +44,7 @@ const taxiList = [
   {
     name: "Taxi Lasta",
     phone: "0296 3 77 77 77",
-    area: "Dịch vụ chủ yếu ở các khu vực du lịch nổi tiếng tại An Giang.",
+    area: "Dịch vụ chủ yếu ở các khu vực du lịch nổi tiếng tại An Giang.",
     price: "Linh hoạt theo từng loại xe và nhu cầu khách hàng.",
   },
   {

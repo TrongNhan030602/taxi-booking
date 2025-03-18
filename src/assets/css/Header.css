@@ -28,7 +28,7 @@
 
 .header__logo-img {
   height: 60px;
-  max-width: 200px;
+  max-width: 212px;
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -59,7 +59,7 @@
 .navbar__link {
   text-decoration: none;
   color: var(--text-white);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   padding: 12px 14px;
   border-radius: 6px;

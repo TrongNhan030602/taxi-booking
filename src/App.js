@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TaxiDirectoryPage from "./pages/TaxiDirectoryPage";
@@ -13,6 +14,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop /> {/* Thêm vào đây */}
       <div className="container-fluid p-0">
         <Header />
         <Routes>

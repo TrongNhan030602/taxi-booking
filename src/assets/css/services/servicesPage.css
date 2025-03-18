@@ -13,12 +13,12 @@
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .services-description {
   font-size: 1.1rem;
   color: #555;
-  max-width: 900px;
   margin: 20px auto;
   line-height: 1.8;
   text-align: justify;
@@ -92,6 +92,13 @@
   margin: 10px 0;
 }
 
+.highlight-phone a {
+  text-decoration: none;
+  color: #ffd246;
+}
+.highlight-phone a:hover {
+  text-decoration: underline;
+}
 .phone-icon {
   margin-right: 8px;
   color: #ff9a3f;
